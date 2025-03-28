@@ -91,7 +91,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
             <ListItems
               items={newSuggestion}
               selectedIndex={selectedIndex}
-              onSelect={(value, index) => {
+              onSelect={(_, index) => {
                 setInputValue(suggestion[index]);
                 onSearch(suggestion[index], true);
                 setShowSuggestions(false);
